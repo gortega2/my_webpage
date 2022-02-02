@@ -1,0 +1,99 @@
+h1, h2, h3, li, p {
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: yellow;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  
+}
+
+h1{
+  margin-block: 40pt;
+  font-family: "Trebuchet MS";
+  font-size: 90pt;
+  margin-left: 10%;
+  margin-right: 10% 
+}
+
+li {
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+a {
+  display:block;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.center {
+  display; block;
+  margin-left: 45%;
+  margin-right: auto;
+  width: 10%;
+  text-align: center;
+}
+
+html { 
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+
+
+a:link{
+  color:yellow;
+}
+
+a:visited{
+  color:orange;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  
+  list-style: none;
+  margin: 0; 
+  background: transparent;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.navigation a:hover {
+  background: #1565C0;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
